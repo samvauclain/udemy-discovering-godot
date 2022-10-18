@@ -1,0 +1,109 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Levels/Tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Hazards/SpikeTop.tscn" type="PackedScene" id=3]
+[ext_resource path="res://SFX/Chiptune_Adventures_1.ogg" type="AudioStream" id=4]
+[ext_resource path="res://Levels/GameState.gd" type="Script" id=5]
+[ext_resource path="res://Items/JumpPad.tscn" type="PackedScene" id=6]
+[ext_resource path="res://GUI/GUI.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Items/Coin.tscn" type="PackedScene" id=8]
+[ext_resource path="res://NPCs/Spikeman.tscn" type="PackedScene" id=9]
+[ext_resource path="res://NPCs/Cloud.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Items/Portal.tscn" type="PackedScene" id=11]
+
+[node name="Level1" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 528.782, 202.551 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+collision_layer = 2
+format = 1
+tile_data = PoolIntArray( 131098, 1, 0, 131110, 7, 0, 196659, 7, 0, 327680, 0, 0, 327745, 6, 0, 458774, 1, 0, 458796, 7, 0, 524295, 0, 0, 524345, 7, 0, 720925, 7, 0, 786448, 7, 0, 1048578, 4, 0, 1179660, 4, 0, 1179670, 4, 0, 1179679, 4, 0 )
+
+[node name="Hazards" type="Node" parent="."]
+
+[node name="SpikeTop" parent="Hazards" instance=ExtResource( 3 )]
+position = Vector2( 667.576, 488.647 )
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Coin" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 281.283, 275.396 )
+
+[node name="Coin2" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 797.283, 471.396 )
+
+[node name="Coin3" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 1040.28, 727.396 )
+
+[node name="Coin4" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 1123.28, 727.396 )
+
+[node name="Coin5" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 1196.28, 728.396 )
+
+[node name="Coin6" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 1042.28, 610.396 )
+
+[node name="Coin7" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 1128.28, 609.396 )
+
+[node name="Coin8" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 1035.28, 501.396 )
+
+[node name="Coin9" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 1214.28, 611.396 )
+
+[node name="Coin10" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 1035.28, 502.396 )
+
+[node name="Coin11" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 1126.28, 503.396 )
+
+[node name="Coin12" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 1212.28, 497.396 )
+
+[node name="Coin13" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 1031.28, 395.396 )
+
+[node name="Coin14" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 1129.28, 395.396 )
+
+[node name="Coin15" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 1217.28, 396.396 )
+
+[node name="Coin16" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 1450.28, 400.396 )
+
+[node name="Coin17" parent="Node" instance=ExtResource( 8 )]
+position = Vector2( 1536.28, 400.396 )
+
+[node name="JumpPads" type="Node" parent="."]
+
+[node name="JumpPad" parent="JumpPads" instance=ExtResource( 6 )]
+position = Vector2( 2299.51, 1108.74 )
+
+[node name="JumpPad2" parent="JumpPads" instance=ExtResource( 6 )]
+position = Vector2( 896.611, 1094.6 )
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -15.0
+autoplay = true
+
+[node name="GUI" parent="." instance=ExtResource( 7 )]
+
+[node name="NPCs" type="Node" parent="."]
+
+[node name="Spikeman" parent="NPCs" instance=ExtResource( 9 )]
+position = Vector2( 1604, 1082 )
+
+[node name="Cloud" parent="NPCs" instance=ExtResource( 10 )]
+position = Vector2( 2234, 350 )
+
+[node name="Portal" parent="." instance=ExtResource( 11 )]
+position = Vector2( 4336.8, -2.3988 )
