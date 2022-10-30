@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/nightvision.wav-dc9a4e77bec7211a5621af468278b1b5.sample"
+
+[deps]
+
+source_file="res://Heist_Meisters_Assets/SFX/nightvision.wav"
+dest_files=[ "res://.import/nightvision.wav-dc9a4e77bec7211a5621af468278b1b5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

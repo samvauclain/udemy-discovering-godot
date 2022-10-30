@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/doorOpen_2.ogg-746cc83abc5d40b45b5efc91f2dad54f.oggstr"
+
+[deps]
+
+source_file="res://Heist_Meisters_Assets/SFX/doorOpen_2.ogg"
+dest_files=[ "res://.import/doorOpen_2.ogg-746cc83abc5d40b45b5efc91f2dad54f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
