@@ -6,7 +6,10 @@
 [ext_resource path="res://Characters/NPCs/Guard.gd" type="Script" id=4]
 
 [node name="Guard" instance=ExtResource( 1 )]
+position = Vector2( 79, 54 )
 script = ExtResource( 4 )
+minimum_arrival_distance = 5
+walk_speed = 0.5
 
 [node name="Sprite" parent="." index="0"]
 texture = ExtResource( 3 )
@@ -14,3 +17,9 @@ offset = Vector2( -2, 0 )
 
 [node name="Torch" parent="." index="3" instance=ExtResource( 2 )]
 position = Vector2( 13.625, 0 )
+
+[node name="Timer" type="Timer" parent="." index="4"]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
