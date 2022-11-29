@@ -50,7 +50,7 @@ func make_path():
 	# print("navigation: ", navigation)
 	path = navigation.get_simple_path(position, new_destination.position, false)
 	
-	print(path)
+	# print(path)
 	# print(path.size())
 
 func _on_Timer_timeout():
