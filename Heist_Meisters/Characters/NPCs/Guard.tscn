@@ -6,7 +6,9 @@
 [ext_resource path="res://Characters/NPCs/Guard.gd" type="Script" id=4]
 
 [node name="Guard" instance=ExtResource( 1 )]
-position = Vector2( 79, 54 )
+position = Vector2( 79.125, 54 )
+collision_layer = 4
+collision_mask = 3
 script = ExtResource( 4 )
 
 [node name="Sprite" parent="." index="0"]

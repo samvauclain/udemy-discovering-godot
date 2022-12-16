@@ -720,7 +720,7 @@ polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
 "shape": SubResource( 102 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
-4/z_index = 0
+4/z_index = 2
 5/name = "Floor1"
 5/texture = ExtResource( 1 )
 5/tex_offset = Vector2( 0, 0 )

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Levels/TemplateLevel.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Characters/NPCs/Camera.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Characters/NPCs/Guard.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Doors/Door.tscn" type="PackedScene" id=4]
 
 [node name="Level1" instance=ExtResource( 1 )]
 
@@ -50,9 +51,6 @@ position = Vector2( 155.563, -381.838 )
 [node name="Player" parent="." index="1"]
 position = Vector2( -351.432, -163.342 )
 
-[node name="CanvasModulate" parent="." index="2"]
-position = Vector2( -480, -680 )
-
 [node name="Camera" parent="Cameras" index="0" instance=ExtResource( 2 )]
 position = Vector2( 205, 240.5 )
 
@@ -71,3 +69,35 @@ rotation = 1.5708
 [node name="Guard2" parent="Guards" index="1" instance=ExtResource( 3 )]
 position = Vector2( 474.939, -356.709 )
 rotation = 3.66519
+
+[node name="Door" parent="Doors" index="0" instance=ExtResource( 4 )]
+position = Vector2( 32, 160.5 )
+
+[node name="Door9" parent="Doors" index="1" instance=ExtResource( 4 )]
+position = Vector2( -351.5, -31 )
+
+[node name="Door3" parent="Doors" index="2" instance=ExtResource( 4 )]
+position = Vector2( 416.3, -288.7 )
+
+[node name="Door7" parent="Doors" index="3" instance=ExtResource( 4 )]
+position = Vector2( 672.3, -31.6998 )
+
+[node name="Door2" parent="Doors" index="4" instance=ExtResource( 4 )]
+position = Vector2( 351, -224.3 )
+rotation = 1.5708
+
+[node name="Door4" parent="Doors" index="5" instance=ExtResource( 4 )]
+position = Vector2( 543, -160.8 )
+rotation = 1.5708
+
+[node name="Door6" parent="Doors" index="6" instance=ExtResource( 4 )]
+position = Vector2( 543.5, 287.5 )
+rotation = 1.5708
+
+[node name="Door8" parent="Doors" index="7" instance=ExtResource( 4 )]
+position = Vector2( 160.5, 287.5 )
+rotation = 1.5708
+
+[node name="Door5" parent="Doors" index="8" instance=ExtResource( 4 )]
+position = Vector2( 544.5, -416.8 )
+rotation = 1.5708
